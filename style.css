@@ -1,0 +1,187 @@
+body::-webkit-scrollbar {
+    width: 1em;
+}
+body::-webkit-scrollbar-track {
+    /*box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    background-color: rgb(50,50,50)
+}
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  outline: 1px solid rgb(50, 50, 50);
+}
+.event{
+  width: 85%;
+  height: 400px;
+  margin-top: 50px;
+  border-radius: 8px;
+  background-color: white;
+  border: 1.5px black solid;
+}
+#colorStrip{
+  width: 100%;
+  background-color: lime;
+  margin: 0;
+  height: 20px;
+  border-radius: 8px 8px 0px 0px;
+}
+#time{
+  float: right;
+  text-align: center;
+  transition-duration: 0.15s;
+  background-color: rgba(50,50,50,1);
+  border: rgba(50,50,50,1);
+  height: 100%;
+  width: 150px;
+  font-size: 25px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  border-left: 2.5px solid rgb(100,100,100);
+}
+html{
+    font-family: "Raleway", sans-serif;
+    color: black;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    padding: 0%;
+    margin: 0%;
+    background-color: black;
+    cursor: default;
+}
+body{
+    width:100%;
+    height:100%;
+    overflow-y: scroll;
+    overflow: unset;
+    padding: 0%;
+    margin: 0%;
+    background-image: black;
+    /*padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+    overflow-x: scroll;
+    padding-bottom: 17px; 
+    box-sizing: content-box;
+}
+#titleBar{
+  transition-duration: 0.15s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 55px;
+  background-color: rgba(50,50,50,1);
+  border-bottom: 8px solid linear-gradient(rgba(50,50,50,1)rgba(0,0,0,1));
+}
+#layer1{
+    top: 10px;
+    left: 10px;
+    /* The image used */
+    background-image: url('images/desert.jpg');
+
+    /* Full height */
+    height: 200px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.1);
+    filter: brightness(50%);
+    z-index: 2;
+}
+#layer2{
+    transition: 500ms;
+    background-color: rgba(75, 75, 75, 1);
+    background-attachment: fixed;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8%;
+    padding-top: 2%;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+}
+#layer3{
+    top: 90%;
+    left: 0%;
+    text-align: center;
+    position: sticky;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    padding-top: 10px;
+    color: white;
+    background-image: url("images/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    filter: brightness(50%);
+    margin: -100px;
+}
+#line1{
+  width: 90%;
+  height: 5px;
+  background-color: black;
+}
+#btp{
+  margin-top: 0;
+  padding: 5px
+}
+#nevents{
+  transition-duration: 0.15s; 
+  height: 100%;
+  font-size: 25px;
+  background-color: rgb(153, 0, 153);
+  border: solid 0px rgb(153, 0, 153);
+  font-family: "Raleway", sans-serif;
+  border-right: 2.5px solid rgb(100,100,100);
+  color:black;
+}
+#nevents:hover{
+  background-color: rgb(199, 118, 199);
+  border: solid 0px rgb(199, 118, 199);
+  cursor: pointer;
+  border-right: 2.5px solid rgb(100,100,100);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.navButton{
+  transition-duration: 0.15s;
+  background-color: rgba(50,50,50,1);
+  border: rgba(50,50,50,1);
+  height: 100%;
+  font-size: 25px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  border-right: 2.5px solid rgb(100,100,100);
+}
+.navButton:hover{
+  background-color: rgba(100,100,100,1);
+  border: rgba(100,100,100,1);
+  border-right: 2.5px solid rgb(100,100,100);
+  color: black;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#buttonDivider{
+  height: 90%;
+  width: 5px;
+  background-color: rgb(100,100,100);
+  
+}
+.sub{ 
+  color: rgb(30,30,30)
+}
+#overlay{
+  position: fixed;
+  background-color: rgba(50,50,50,0.8);
+  width: 80%;
+  height: 550px;
+  z-index: 1;
+}
